@@ -105,8 +105,14 @@ export default function Index() {
       color: "from-red-500 to-red-600",
     },
     {
+      icon: Video,
+      label: "Postar Ação",
+      path: "/postagens",
+      color: "from-purple-500 to-purple-600",
+    },
+    {
       icon: BookOpen,
-      label: "Dicas Sustentáveis",
+      label: "Educação",
       path: "/educacao",
       color: "from-green-500 to-green-600",
     },
@@ -333,7 +339,7 @@ export default function Index() {
                     Ganhe Pontos
                   </h3>
                   <p className="text-sm text-muted-foreground">
-                    Acumule pontos e medalhas por ações sustentáveis
+                    Acumule pontos e medalhas por a��ões sustentáveis
                   </p>
                 </div>
               </div>
