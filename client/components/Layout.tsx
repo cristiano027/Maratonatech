@@ -40,7 +40,7 @@ export default function Layout({ children }: LayoutProps) {
                 <Leaf className="w-6 h-6 text-white" />
               </div>
               <span className="font-bold text-lg text-foreground hidden sm:inline">
-                CariaLixo
+                Cariacica +
               </span>
             </Link>
 
