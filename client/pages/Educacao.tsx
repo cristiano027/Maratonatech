@@ -229,24 +229,34 @@ export default function Educacao() {
                     Poste Sua Ação Sustentável
                   </h3>
                   <p className="text-muted-foreground mb-4">
-                    Grave ou envie um vídeo de você descartando lixo corretamente e ganhe pontos. Cada ação sustentável documentada ajuda a fortalecer nossa comunidade!
+                    Grave ou envie um vídeo de você descartando lixo
+                    corretamente e ganhe pontos. Cada ação sustentável
+                    documentada ajuda a fortalecer nossa comunidade!
                   </p>
                   <div className="space-y-2 mb-6">
                     <div className="flex items-center gap-2 text-sm">
                       <span className="w-2 h-2 bg-primary rounded-full"></span>
-                      <span className="text-foreground">Máximo 2 minutos de vídeo</span>
+                      <span className="text-foreground">
+                        Máximo 2 minutos de vídeo
+                      </span>
                     </div>
                     <div className="flex items-center gap-2 text-sm">
                       <span className="w-2 h-2 bg-primary rounded-full"></span>
-                      <span className="text-foreground">Ganhe pontos imediatamente após aprovação</span>
+                      <span className="text-foreground">
+                        Ganhe pontos imediatamente após aprovação
+                      </span>
                     </div>
                     <div className="flex items-center gap-2 text-sm">
                       <span className="w-2 h-2 bg-primary rounded-full"></span>
-                      <span className="text-foreground">Escolha entre gravar ou fazer upload</span>
+                      <span className="text-foreground">
+                        Escolha entre gravar ou fazer upload
+                      </span>
                     </div>
                     <div className="flex items-center gap-2 text-sm">
                       <span className="w-2 h-2 bg-primary rounded-full"></span>
-                      <span className="text-foreground">Revisão rápida da moderação</span>
+                      <span className="text-foreground">
+                        Revisão rápida da moderação
+                      </span>
                     </div>
                   </div>
                   <Link
@@ -269,7 +279,8 @@ export default function Educacao() {
                     📹 Iluminação Clara
                   </p>
                   <p className="text-sm text-muted-foreground">
-                    Escolha um local com boa iluminação natural para melhor visualização
+                    Escolha um local com boa iluminação natural para melhor
+                    visualização
                   </p>
                 </div>
                 <div>
@@ -277,7 +288,8 @@ export default function Educacao() {
                     🎬 Seja Didático
                   </p>
                   <p className="text-sm text-muted-foreground">
-                    Mostre o processo completo: separação, acondicionamento e descarte
+                    Mostre o processo completo: separação, acondicionamento e
+                    descarte
                   </p>
                 </div>
                 <div>
@@ -285,7 +297,8 @@ export default function Educacao() {
                     💬 Explique
                   </p>
                   <p className="text-sm text-muted-foreground">
-                    Descreva o tipo de lixo e por que está descartando dessa forma
+                    Descreva o tipo de lixo e por que está descartando dessa
+                    forma
                   </p>
                 </div>
                 <div>

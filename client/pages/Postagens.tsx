@@ -1,5 +1,17 @@
 import Layout from "@/components/Layout";
-import { Video, Upload, Camera, Play, CheckCircle2, Clock, AlertCircle, Leaf, Recycle, Zap as ElectronicIcon, Hammer } from "lucide-react";
+import {
+  Video,
+  Upload,
+  Camera,
+  Play,
+  CheckCircle2,
+  Clock,
+  AlertCircle,
+  Leaf,
+  Recycle,
+  Zap as ElectronicIcon,
+  Hammer,
+} from "lucide-react";
 import { useState, useRef } from "react";
 
 interface PostSubmission {
@@ -14,16 +26,42 @@ interface PostSubmission {
 }
 
 const wasteTypes = [
-  { id: "organic", name: "Orgânico", icon: Leaf, points: 25, color: "bg-[hsl(var(--organic))]" },
-  { id: "recyclable", name: "Reciclável", icon: Recycle, points: 30, color: "bg-[hsl(var(--recyclable))]" },
-  { id: "electronic", name: "Eletrônico", icon: ElectronicIcon, points: 50, color: "bg-[hsl(var(--electronic))]" },
-  { id: "construction", name: "Entulho", icon: Hammer, points: 40, color: "bg-[hsl(var(--construction))]" },
+  {
+    id: "organic",
+    name: "Orgânico",
+    icon: Leaf,
+    points: 25,
+    color: "bg-[hsl(var(--organic))]",
+  },
+  {
+    id: "recyclable",
+    name: "Reciclável",
+    icon: Recycle,
+    points: 30,
+    color: "bg-[hsl(var(--recyclable))]",
+  },
+  {
+    id: "electronic",
+    name: "Eletrônico",
+    icon: ElectronicIcon,
+    points: 50,
+    color: "bg-[hsl(var(--electronic))]",
+  },
+  {
+    id: "construction",
+    name: "Entulho",
+    icon: Hammer,
+    points: 40,
+    color: "bg-[hsl(var(--construction))]",
+  },
 ];
 
 export default function Postagens() {
   const [activeTab, setActiveTab] = useState<"novo" | "minhas">("novo");
   const [selectedWasteType, setSelectedWasteType] = useState<string>("");
-  const [recordingMode, setRecordingMode] = useState<"upload" | "record">("upload");
+  const [recordingMode, setRecordingMode] = useState<"upload" | "record">(
+    "upload",
+  );
   const [videoFile, setVideoFile] = useState<File | null>(null);
   const [videoPreview, setVideoPreview] = useState<string>("");
   const [description, setDescription] = useState("");
@@ -160,7 +198,11 @@ export default function Postagens() {
     setDescription("");
     setSelectedWasteType("");
     setRecordingMode("upload");
-    alert("Vídeo enviado para revisão! Você pode ganhar " + wasteTypeObj.points + " pontos se aprovado.");
+    alert(
+      "Vídeo enviado para revisão! Você pode ganhar " +
+        wasteTypeObj.points +
+        " pontos se aprovado.",
+    );
   };
 
   const getStatusIcon = (status: string) => {
@@ -216,7 +258,8 @@ export default function Postagens() {
             Compartilhe Sua Ação Sustentável
           </h1>
           <p className="text-muted-foreground">
-            Grave ou envie vídeos de você descartando corretamente e ganhe pontos
+            Grave ou envie vídeos de você descartando corretamente e ganhe
+            pontos
           </p>
         </div>
 
@@ -412,7 +455,9 @@ export default function Postagens() {
                 {videoFile && (
                   <div className="mt-4 p-3 bg-green-50 border border-green-200 rounded-lg flex items-center gap-2">
                     <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0" />
-                    <span className="text-sm text-green-700">{videoFile.name}</span>
+                    <span className="text-sm text-green-700">
+                      {videoFile.name}
+                    </span>
                   </div>
                 )}
               </div>
@@ -444,7 +489,9 @@ export default function Postagens() {
             {/* Info Sidebar */}
             <div className="space-y-4">
               <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
-                <h3 className="font-semibold text-blue-900 mb-2">Como Funciona</h3>
+                <h3 className="font-semibold text-blue-900 mb-2">
+                  Como Funciona
+                </h3>
                 <ol className="text-sm text-blue-800 space-y-2">
                   <li>1. Escolha o tipo de lixo</li>
                   <li>2. Grave ou envie um vídeo (até 2 min)</li>
@@ -454,7 +501,9 @@ export default function Postagens() {
               </div>
 
               <div className="bg-green-50 border border-green-200 rounded-lg p-4">
-                <h3 className="font-semibold text-green-900 mb-3">Pontos por Tipo</h3>
+                <h3 className="font-semibold text-green-900 mb-3">
+                  Pontos por Tipo
+                </h3>
                 <div className="space-y-2">
                   {wasteTypes.map((waste) => (
                     <div
@@ -485,7 +534,7 @@ export default function Postagens() {
                 <div
                   key={submission.id}
                   className={`border border-border rounded-lg p-6 ${getStatusColor(
-                    submission.status
+                    submission.status,
                   )}`}
                 >
                   <div className="flex items-start justify-between mb-4">
