@@ -215,6 +215,92 @@ export default function Educacao() {
           </div>
         </section>
 
+        {/* Share Your Action Section */}
+        <section className="mb-12">
+          <h2 className="text-2xl font-semibold text-foreground mb-6">
+            Compartilhe Sua Ação
+          </h2>
+          <div className="grid lg:grid-cols-2 gap-6">
+            <div className="bg-gradient-to-br from-blue-50 to-purple-50 border border-blue-200 rounded-lg p-8">
+              <div className="flex items-start gap-4 mb-4">
+                <Video className="w-8 h-8 text-primary flex-shrink-0 mt-1" />
+                <div>
+                  <h3 className="text-lg font-semibold text-foreground mb-2">
+                    Poste Sua Ação Sustentável
+                  </h3>
+                  <p className="text-muted-foreground mb-4">
+                    Grave ou envie um vídeo de você descartando lixo corretamente e ganhe pontos. Cada ação sustentável documentada ajuda a fortalecer nossa comunidade!
+                  </p>
+                  <div className="space-y-2 mb-6">
+                    <div className="flex items-center gap-2 text-sm">
+                      <span className="w-2 h-2 bg-primary rounded-full"></span>
+                      <span className="text-foreground">Máximo 2 minutos de vídeo</span>
+                    </div>
+                    <div className="flex items-center gap-2 text-sm">
+                      <span className="w-2 h-2 bg-primary rounded-full"></span>
+                      <span className="text-foreground">Ganhe pontos imediatamente após aprovação</span>
+                    </div>
+                    <div className="flex items-center gap-2 text-sm">
+                      <span className="w-2 h-2 bg-primary rounded-full"></span>
+                      <span className="text-foreground">Escolha entre gravar ou fazer upload</span>
+                    </div>
+                    <div className="flex items-center gap-2 text-sm">
+                      <span className="w-2 h-2 bg-primary rounded-full"></span>
+                      <span className="text-foreground">Revisão rápida da moderação</span>
+                    </div>
+                  </div>
+                  <Link
+                    to="/postagens"
+                    className="inline-block px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors font-medium"
+                  >
+                    Começar Agora
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-br from-green-50 to-emerald-50 border border-green-200 rounded-lg p-8">
+              <h3 className="text-lg font-semibold text-foreground mb-4">
+                Dicas para Vídeos Melhores
+              </h3>
+              <div className="space-y-3">
+                <div>
+                  <p className="font-medium text-foreground text-sm mb-1">
+                    📹 Iluminação Clara
+                  </p>
+                  <p className="text-sm text-muted-foreground">
+                    Escolha um local com boa iluminação natural para melhor visualização
+                  </p>
+                </div>
+                <div>
+                  <p className="font-medium text-foreground text-sm mb-1">
+                    🎬 Seja Didático
+                  </p>
+                  <p className="text-sm text-muted-foreground">
+                    Mostre o processo completo: separação, acondicionamento e descarte
+                  </p>
+                </div>
+                <div>
+                  <p className="font-medium text-foreground text-sm mb-1">
+                    💬 Explique
+                  </p>
+                  <p className="text-sm text-muted-foreground">
+                    Descreva o tipo de lixo e por que está descartando dessa forma
+                  </p>
+                </div>
+                <div>
+                  <p className="font-medium text-foreground text-sm mb-1">
+                    ⏱️ Seja Objetivo
+                  </p>
+                  <p className="text-sm text-muted-foreground">
+                    Respeite o tempo máximo de 2 minutos para melhor engajamento
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* CTA Section */}
         <section className="bg-gradient-to-r from-green-50 to-blue-50 rounded-lg p-8 border border-green-200">
           <div className="flex items-center gap-4 mb-4">
