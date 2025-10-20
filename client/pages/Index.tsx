@@ -186,7 +186,7 @@ export default function Index() {
             <h2 className="text-xl font-semibold text-foreground mb-4">
               Acesso Rápido
             </h2>
-            <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
+            <div className="grid grid-cols-2 sm:grid-cols-2 xl:grid-cols-5 gap-3 sm:gap-4" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(160px, 1fr))' }}>
               {quickActions.map((action) => {
                 const Icon = action.icon;
                 return (
