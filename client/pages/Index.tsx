@@ -11,6 +11,7 @@ import {
   Recycle,
   Zap as ElectronicIcon,
   Hammer,
+  Video,
 } from "lucide-react";
 
 export default function Index() {
