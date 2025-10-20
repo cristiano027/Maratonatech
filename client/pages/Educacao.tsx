@@ -7,8 +7,10 @@ import {
   Hammer,
   Play,
   Award,
+  Video,
 } from "lucide-react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Educacao() {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
