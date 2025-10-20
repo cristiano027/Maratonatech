@@ -1,5 +1,13 @@
 import Layout from "@/components/Layout";
-import { AlertCircle, Upload, MapPin, Camera, CheckCircle2, Clock, XCircle } from "lucide-react";
+import {
+  AlertCircle,
+  Upload,
+  MapPin,
+  Camera,
+  CheckCircle2,
+  Clock,
+  XCircle,
+} from "lucide-react";
 import { useState } from "react";
 
 export default function Denuncias() {
@@ -86,8 +94,12 @@ export default function Denuncias() {
     <Layout>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
         <div className="mb-8">
-          <h1 className="text-3xl sm:text-4xl font-bold text-foreground mb-2">Fazer Denúncia</h1>
-          <p className="text-muted-foreground">Reporte lixo irregular ou problemas de coleta em Cariacica</p>
+          <h1 className="text-3xl sm:text-4xl font-bold text-foreground mb-2">
+            Fazer Denúncia
+          </h1>
+          <p className="text-muted-foreground">
+            Reporte lixo irregular ou problemas de coleta em Cariacica
+          </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
@@ -103,7 +115,10 @@ export default function Denuncias() {
                     <textarea
                       value={formData.description}
                       onChange={(e) =>
-                        setFormData({ ...formData, description: e.target.value })
+                        setFormData({
+                          ...formData,
+                          description: e.target.value,
+                        })
                       }
                       placeholder="Descreva o problema encontrado (ex: lixo acumulado, coleta não realizada, etc)"
                       className="w-full px-4 py-3 border border-border rounded-lg bg-background text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary"
@@ -206,12 +221,17 @@ export default function Denuncias() {
                     Denúncia Enviada!
                   </h2>
                   <p className="text-muted-foreground mb-6">
-                    Sua denúncia foi recebida com sucesso. O número de protocolo é #D2024001
+                    Sua denúncia foi recebida com sucesso. O número de protocolo
+                    é #D2024001
                   </p>
                   <button
                     onClick={() => {
                       setFormStep(1);
-                      setFormData({ description: "", location: "", photo: null });
+                      setFormData({
+                        description: "",
+                        location: "",
+                        photo: null,
+                      });
                     }}
                     className="px-6 py-2 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors"
                   >
@@ -224,7 +244,9 @@ export default function Denuncias() {
 
           {/* Recent Reports */}
           <div className="space-y-4">
-            <h2 className="text-lg font-semibold text-foreground">Denúncias Recentes</h2>
+            <h2 className="text-lg font-semibold text-foreground">
+              Denúncias Recentes
+            </h2>
             <div className="space-y-3">
               {recentReports.map((report) => (
                 <div

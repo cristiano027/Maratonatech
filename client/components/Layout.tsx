@@ -1,6 +1,14 @@
 import { ReactNode } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Leaf, MapPin, AlertCircle, Lightbulb, Trophy, Menu, X } from "lucide-react";
+import {
+  Leaf,
+  MapPin,
+  AlertCircle,
+  Lightbulb,
+  Trophy,
+  Menu,
+  X,
+} from "lucide-react";
 import { useState } from "react";
 
 interface LayoutProps {
@@ -97,9 +105,7 @@ export default function Layout({ children }: LayoutProps) {
       </header>
 
       {/* Main Content */}
-      <main className="flex-1">
-        {children}
-      </main>
+      <main className="flex-1">{children}</main>
 
       {/* Footer */}
       <footer className="bg-card border-t border-border mt-16">
@@ -111,21 +117,43 @@ export default function Layout({ children }: LayoutProps) {
                 CariaLixo
               </h3>
               <p className="text-sm text-muted-foreground">
-                Gerenciamento inteligente de coleta de lixo e resíduos em Cariacica, ES.
+                Gerenciamento inteligente de coleta de lixo e resíduos em
+                Cariacica, ES.
               </p>
             </div>
             <div>
-              <h4 className="font-semibold text-foreground mb-3">Links Rápidos</h4>
+              <h4 className="font-semibold text-foreground mb-3">
+                Links Rápidos
+              </h4>
               <ul className="space-y-2 text-sm text-muted-foreground">
-                <li><Link to="/" className="hover:text-primary transition-colors">Calendário de Coleta</Link></li>
-                <li><Link to="/mapa" className="hover:text-primary transition-colors">Mapa Interativo</Link></li>
-                <li><Link to="/denuncias" className="hover:text-primary transition-colors">Fazer Denúncia</Link></li>
+                <li>
+                  <Link to="/" className="hover:text-primary transition-colors">
+                    Calendário de Coleta
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/mapa"
+                    className="hover:text-primary transition-colors"
+                  >
+                    Mapa Interativo
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/denuncias"
+                    className="hover:text-primary transition-colors"
+                  >
+                    Fazer Denúncia
+                  </Link>
+                </li>
               </ul>
             </div>
             <div>
               <h4 className="font-semibold text-foreground mb-3">Contato</h4>
               <p className="text-sm text-muted-foreground">
-                Prefeitura de Cariacica, ES<br />
+                Prefeitura de Cariacica, ES
+                <br />
                 Central de Atendimento: (27) 3261-1000
               </p>
             </div>
@@ -135,9 +163,15 @@ export default function Layout({ children }: LayoutProps) {
               © 2024 CariaLixo. Todos os direitos reservados.
             </p>
             <div className="flex gap-4 text-sm text-muted-foreground">
-              <a href="#" className="hover:text-primary transition-colors">Privacidade</a>
-              <a href="#" className="hover:text-primary transition-colors">Termos</a>
-              <a href="#" className="hover:text-primary transition-colors">Contato</a>
+              <a href="#" className="hover:text-primary transition-colors">
+                Privacidade
+              </a>
+              <a href="#" className="hover:text-primary transition-colors">
+                Termos
+              </a>
+              <a href="#" className="hover:text-primary transition-colors">
+                Contato
+              </a>
             </div>
           </div>
         </div>

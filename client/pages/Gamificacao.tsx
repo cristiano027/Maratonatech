@@ -11,12 +11,48 @@ export default function Gamificacao() {
   };
 
   const achievements = [
-    { id: 1, name: "Primeiro Passo", description: "Faça sua primeira denúncia", icon: "🌱", unlocked: true },
-    { id: 2, name: "Reciclador", description: "Complete 10 ações de reciclagem", icon: "♻️", unlocked: true },
-    { id: 3, name: "Protetor do Ambiente", description: "Ganhe 500 pontos", icon: "🛡️", unlocked: true },
-    { id: 4, name: "Missionário", description: "Complete 5 missões ambientais", icon: "🎯", unlocked: false },
-    { id: 5, name: "Especialista", description: "Complete todos os quizzes", icon: "🧠", unlocked: false },
-    { id: 6, name: "Campeão", description: "Fique no top 5 do ranking", icon: "🏆", unlocked: false },
+    {
+      id: 1,
+      name: "Primeiro Passo",
+      description: "Faça sua primeira denúncia",
+      icon: "🌱",
+      unlocked: true,
+    },
+    {
+      id: 2,
+      name: "Reciclador",
+      description: "Complete 10 ações de reciclagem",
+      icon: "♻️",
+      unlocked: true,
+    },
+    {
+      id: 3,
+      name: "Protetor do Ambiente",
+      description: "Ganhe 500 pontos",
+      icon: "🛡️",
+      unlocked: true,
+    },
+    {
+      id: 4,
+      name: "Missionário",
+      description: "Complete 5 missões ambientais",
+      icon: "🎯",
+      unlocked: false,
+    },
+    {
+      id: 5,
+      name: "Especialista",
+      description: "Complete todos os quizzes",
+      icon: "🧠",
+      unlocked: false,
+    },
+    {
+      id: 6,
+      name: "Campeão",
+      description: "Fique no top 5 do ranking",
+      icon: "🏆",
+      unlocked: false,
+    },
   ];
 
   const neighborhoodRanking = [
@@ -64,8 +100,12 @@ export default function Gamificacao() {
     <Layout>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
         <div className="mb-8">
-          <h1 className="text-3xl sm:text-4xl font-bold text-foreground mb-2">Meus Pontos</h1>
-          <p className="text-muted-foreground">Acompanhe seu progresso e conquistas ambientais</p>
+          <h1 className="text-3xl sm:text-4xl font-bold text-foreground mb-2">
+            Meus Pontos
+          </h1>
+          <p className="text-muted-foreground">
+            Acompanhe seu progresso e conquistas ambientais
+          </p>
         </div>
 
         {/* User Stats */}
@@ -106,7 +146,9 @@ export default function Gamificacao() {
         <div className="grid lg:grid-cols-3 gap-6 mb-8">
           {/* Current Missions */}
           <div className="lg:col-span-2">
-            <h2 className="text-2xl font-semibold text-foreground mb-4">Missões em Progresso</h2>
+            <h2 className="text-2xl font-semibold text-foreground mb-4">
+              Missões em Progresso
+            </h2>
             <div className="space-y-4">
               {missions.map((mission) => (
                 <div
@@ -115,10 +157,16 @@ export default function Gamificacao() {
                 >
                   <div className="flex items-start justify-between mb-3">
                     <div>
-                      <h3 className="font-semibold text-foreground">{mission.title}</h3>
-                      <p className="text-sm text-muted-foreground mt-1">{mission.description}</p>
+                      <h3 className="font-semibold text-foreground">
+                        {mission.title}
+                      </h3>
+                      <p className="text-sm text-muted-foreground mt-1">
+                        {mission.description}
+                      </p>
                     </div>
-                    <span className="text-lg font-bold text-primary">{mission.reward}pt</span>
+                    <span className="text-lg font-bold text-primary">
+                      {mission.reward}pt
+                    </span>
                   </div>
 
                   <div className="mb-3">
@@ -131,9 +179,7 @@ export default function Gamificacao() {
                     <div className="w-full bg-muted rounded-full h-2">
                       <div
                         className={`h-full rounded-full transition-all ${
-                          mission.completed
-                            ? "bg-green-500"
-                            : "bg-primary"
+                          mission.completed ? "bg-green-500" : "bg-primary"
                         }`}
                         style={{
                           width: `${(mission.progress / mission.total) * 100}%`,
@@ -143,7 +189,9 @@ export default function Gamificacao() {
                   </div>
 
                   {mission.completed && (
-                    <div className="text-sm text-green-600 font-medium">✓ Completa</div>
+                    <div className="text-sm text-green-600 font-medium">
+                      ✓ Completa
+                    </div>
                   )}
                 </div>
               ))}
@@ -158,7 +206,9 @@ export default function Gamificacao() {
             </h3>
             <div className="mb-6">
               <div className="flex justify-between text-sm mb-2">
-                <span className="text-muted-foreground">Nível {userStats.level}</span>
+                <span className="text-muted-foreground">
+                  Nível {userStats.level}
+                </span>
                 <span className="text-muted-foreground">
                   {userStats.points}/{userStats.nextLevel}
                 </span>
@@ -172,7 +222,8 @@ export default function Gamificacao() {
                 ></div>
               </div>
               <p className="text-xs text-muted-foreground mt-2">
-                {userStats.nextLevel - userStats.points} pontos para o próximo nível
+                {userStats.nextLevel - userStats.points} pontos para o próximo
+                nível
               </p>
             </div>
 
@@ -184,7 +235,9 @@ export default function Gamificacao() {
 
         {/* Achievements */}
         <section className="mb-8">
-          <h2 className="text-2xl font-semibold text-foreground mb-4">Conquistas</h2>
+          <h2 className="text-2xl font-semibold text-foreground mb-4">
+            Conquistas
+          </h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {achievements.map((achievement) => (
               <div
@@ -196,10 +249,16 @@ export default function Gamificacao() {
                 }`}
               >
                 <div className="text-3xl mb-2">{achievement.icon}</div>
-                <h3 className="font-semibold text-foreground text-sm">{achievement.name}</h3>
-                <p className="text-xs text-muted-foreground mt-1">{achievement.description}</p>
+                <h3 className="font-semibold text-foreground text-sm">
+                  {achievement.name}
+                </h3>
+                <p className="text-xs text-muted-foreground mt-1">
+                  {achievement.description}
+                </p>
                 {achievement.unlocked && (
-                  <div className="mt-3 text-xs text-primary font-medium">✓ Conquistada</div>
+                  <div className="mt-3 text-xs text-primary font-medium">
+                    ✓ Conquistada
+                  </div>
                 )}
               </div>
             ))}
@@ -208,7 +267,9 @@ export default function Gamificacao() {
 
         {/* Neighborhood Ranking */}
         <section>
-          <h2 className="text-2xl font-semibold text-foreground mb-4">Ranking por Bairro</h2>
+          <h2 className="text-2xl font-semibold text-foreground mb-4">
+            Ranking por Bairro
+          </h2>
           <div className="bg-card border border-border rounded-lg overflow-hidden">
             <div className="overflow-x-auto">
               <table className="w-full">
@@ -253,15 +314,15 @@ export default function Gamificacao() {
                             item.trend === "up"
                               ? "text-green-600"
                               : item.trend === "down"
-                              ? "text-red-600"
-                              : "text-gray-600"
+                                ? "text-red-600"
+                                : "text-gray-600"
                           }`}
                         >
                           {item.trend === "up"
                             ? "↑ Subindo"
                             : item.trend === "down"
-                            ? "↓ Caindo"
-                            : "→ Estável"}
+                              ? "↓ Caindo"
+                              : "→ Estável"}
                         </span>
                       </td>
                     </tr>

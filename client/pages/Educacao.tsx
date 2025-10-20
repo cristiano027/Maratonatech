@@ -1,5 +1,13 @@
 import Layout from "@/components/Layout";
-import { BookOpen, Leaf, Recycle, Zap as ElectronicIcon, Hammer, Play, Award } from "lucide-react";
+import {
+  BookOpen,
+  Leaf,
+  Recycle,
+  Zap as ElectronicIcon,
+  Hammer,
+  Play,
+  Award,
+} from "lucide-react";
 import { useState } from "react";
 
 export default function Educacao() {
@@ -9,28 +17,32 @@ export default function Educacao() {
     {
       category: "organic",
       title: "Compostagem Caseira",
-      description: "Aprenda como fazer compostagem dos seus resíduos orgânicos e criar adubo natural para plantas",
+      description:
+        "Aprenda como fazer compostagem dos seus resíduos orgânicos e criar adubo natural para plantas",
       icon: Leaf,
       color: "bg-[hsl(var(--organic))]",
     },
     {
       category: "recyclable",
       title: "Separação Correta de Recicláveis",
-      description: "Guia completo sobre como separar papel, plástico, metal e vidro corretamente",
+      description:
+        "Guia completo sobre como separar papel, plástico, metal e vidro corretamente",
       icon: Recycle,
       color: "bg-[hsl(var(--recyclable))]",
     },
     {
       category: "electronic",
       title: "Descarte Seguro de Eletrônicos",
-      description: "Saiba por que eletrônicos são perigosos e onde descartar corretamente",
+      description:
+        "Saiba por que eletrônicos são perigosos e onde descartar corretamente",
       icon: ElectronicIcon,
       color: "bg-[hsl(var(--electronic))]",
     },
     {
       category: "construction",
       title: "Gestão de Entulho",
-      description: "Como descartar corretamente restos de obra e materiais de construção",
+      description:
+        "Como descartar corretamente restos de obra e materiais de construção",
       icon: Hammer,
       color: "bg-[hsl(var(--construction))]",
     },
@@ -101,7 +113,9 @@ export default function Educacao() {
 
         {/* Tips Section */}
         <section className="mb-12">
-          <h2 className="text-2xl font-semibold text-foreground mb-6">Dicas de Sustentabilidade</h2>
+          <h2 className="text-2xl font-semibold text-foreground mb-6">
+            Dicas de Sustentabilidade
+          </h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {tips.map((tip) => {
               const Icon = tip.icon;
@@ -117,7 +131,9 @@ export default function Educacao() {
                 >
                   <Icon className="w-8 h-8 mb-3" />
                   <h3 className="font-semibold mb-1">{tip.title}</h3>
-                  <p className={`text-sm ${selectedCategory === tip.category ? "opacity-90" : "text-muted-foreground"}`}>
+                  <p
+                    className={`text-sm ${selectedCategory === tip.category ? "opacity-90" : "text-muted-foreground"}`}
+                  >
                     {tip.description}
                   </p>
                 </button>
@@ -128,7 +144,9 @@ export default function Educacao() {
 
         {/* Videos Section */}
         <section className="mb-12">
-          <h2 className="text-2xl font-semibold text-foreground mb-6">Vídeos Educativos</h2>
+          <h2 className="text-2xl font-semibold text-foreground mb-6">
+            Vídeos Educativos
+          </h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {videos.map((video) => (
               <div
@@ -154,7 +172,9 @@ export default function Educacao() {
 
         {/* Quizzes Section */}
         <section className="mb-12">
-          <h2 className="text-2xl font-semibold text-foreground mb-6">Quizzes Interativos</h2>
+          <h2 className="text-2xl font-semibold text-foreground mb-6">
+            Quizzes Interativos
+          </h2>
           <div className="grid sm:grid-cols-3 gap-4">
             {quizzes.map((quiz) => (
               <div
@@ -162,18 +182,26 @@ export default function Educacao() {
                 className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow"
               >
                 <div className="flex items-start justify-between mb-3">
-                  <h3 className="font-semibold text-foreground">{quiz.title}</h3>
-                  <span className="text-sm font-medium text-primary">{quiz.points}pt</span>
+                  <h3 className="font-semibold text-foreground">
+                    {quiz.title}
+                  </h3>
+                  <span className="text-sm font-medium text-primary">
+                    {quiz.points}pt
+                  </span>
                 </div>
-                <p className="text-sm text-muted-foreground mb-4">{quiz.description}</p>
+                <p className="text-sm text-muted-foreground mb-4">
+                  {quiz.description}
+                </p>
                 <div className="flex items-center justify-between">
-                  <span className={`text-xs font-medium px-2 py-1 rounded-full ${
-                    quiz.difficulty === "Fácil"
-                      ? "bg-green-100 text-green-700"
-                      : quiz.difficulty === "Médio"
-                      ? "bg-amber-100 text-amber-700"
-                      : "bg-red-100 text-red-700"
-                  }`}>
+                  <span
+                    className={`text-xs font-medium px-2 py-1 rounded-full ${
+                      quiz.difficulty === "Fácil"
+                        ? "bg-green-100 text-green-700"
+                        : quiz.difficulty === "Médio"
+                          ? "bg-amber-100 text-amber-700"
+                          : "bg-red-100 text-red-700"
+                    }`}
+                  >
                     {quiz.difficulty}
                   </span>
                   <button className="text-primary hover:text-primary/80 transition-colors font-medium text-sm">
@@ -189,7 +217,9 @@ export default function Educacao() {
         <section className="bg-gradient-to-r from-green-50 to-blue-50 rounded-lg p-8 border border-green-200">
           <div className="flex items-center gap-4 mb-4">
             <Award className="w-8 h-8 text-primary" />
-            <h2 className="text-2xl font-bold text-foreground">Missões Ambientais</h2>
+            <h2 className="text-2xl font-bold text-foreground">
+              Missões Ambientais
+            </h2>
           </div>
           <p className="text-muted-foreground mb-6">
             Participe de desafios sustentáveis e ganhe pontos para seu perfil
