@@ -280,7 +280,7 @@ export default function Index() {
           {/* Features Overview */}
           <section className="bg-gradient-to-br from-blue-50 to-green-50 rounded-lg p-6 sm:p-8 border border-blue-100">
             <h2 className="text-2xl font-bold text-foreground mb-6">
-              Por que usar CariaLixo?
+              Por que usar Cariacica +?
             </h2>
             <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
               <div className="flex gap-3">
