@@ -114,7 +114,7 @@ export default function Layout({ children }: LayoutProps) {
             <div>
               <h3 className="font-semibold text-foreground mb-3 flex items-center gap-2">
                 <Leaf className="w-5 h-5 text-primary" />
-                CariaLixo
+                Cariacica +
               </h3>
               <p className="text-sm text-muted-foreground">
                 Gerenciamento inteligente de coleta de lixo e resíduos em
@@ -160,7 +160,7 @@ export default function Layout({ children }: LayoutProps) {
           </div>
           <div className="border-t border-border pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
             <p className="text-sm text-muted-foreground">
-              © 2024 CariaLixo. Todos os direitos reservados.
+              © 2024 Cariacica +. Todos os direitos reservados.
             </p>
             <div className="flex gap-4 text-sm text-muted-foreground">
               <a href="#" className="hover:text-primary transition-colors">
