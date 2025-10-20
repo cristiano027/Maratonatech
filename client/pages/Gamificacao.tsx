@@ -56,14 +56,14 @@ export default function Gamificacao() {
   ];
 
   const neighborhoodRanking = [
-    { rank: 1, neighborhood: "Centro", points: 8500, trend: "up" },
-    { rank: 2, neighborhood: "Flores", points: 7800, trend: "up" },
-    { rank: 3, neighborhood: "Santa Maria", points: 7200, trend: "down" },
-    { rank: 4, neighborhood: "Bairro Novo", points: 6900, trend: "up" },
-    { rank: 5, neighborhood: "Vila Verde", points: 6200, trend: "stable" },
-    { rank: 6, neighborhood: "Parque", points: 5800, trend: "down" },
-    { rank: 7, neighborhood: "Lagoa", points: 5200, trend: "up" },
-    { rank: 8, neighborhood: "Praia", points: 4800, trend: "stable" },
+    { rank: 1, neighborhood: "Vila Capixaba", points: 8500, trend: "up" },
+    { rank: 2, neighborhood: "Porto de Santana", points: 7800, trend: "up" },
+    { rank: 3, neighborhood: "Rio Branco", points: 7200, trend: "down" },
+    { rank: 4, neighborhood: "Expedito Garcia", points: 6900, trend: "up" },
+    { rank: 5, neighborhood: "Jardim América", points: 6200, trend: "stable" },
+    { rank: 6, neighborhood: "Itacibá", points: 5800, trend: "down" },
+    { rank: 7, neighborhood: "Alto Lage", points: 5200, trend: "up" },
+    { rank: 8, neighborhood: "Campo Verde", points: 4800, trend: "stable" },
   ];
 
   const missions = [
