@@ -9,6 +9,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import Mapa from "./pages/Mapa";
 import Denuncias from "./pages/Denuncias";
+import Postagens from "./pages/Postagens";
 import Educacao from "./pages/Educacao";
 import Gamificacao from "./pages/Gamificacao";
 import NotFound from "./pages/NotFound";
