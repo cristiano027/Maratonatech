@@ -133,7 +133,7 @@ export default function Index() {
             <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
               <div>
                 <h1 className="text-3xl sm:text-4xl font-bold mb-2">
-                  Bem-vindo a CariaLixo
+                  Bem-vindo a Cariacica +
                 </h1>
                 <p className="text-primary-foreground/90 text-lg">
                   Seu bairro: Centro, Cariacica
