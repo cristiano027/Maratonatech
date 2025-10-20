@@ -24,6 +24,7 @@ export default function Layout({ children }: LayoutProps) {
     { path: "/", label: "Coleta", icon: Leaf },
     { path: "/mapa", label: "Mapa", icon: MapPin },
     { path: "/denuncias", label: "Denúncias", icon: AlertCircle },
+    { path: "/postagens", label: "Postagens", icon: Video },
     { path: "/educacao", label: "Educação", icon: Lightbulb },
     { path: "/gamificacao", label: "Pontos", icon: Trophy },
   ];
